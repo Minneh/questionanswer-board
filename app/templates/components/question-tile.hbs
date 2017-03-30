@@ -1,6 +1,7 @@
-  <li>
-    {{question.body}} <br> {{question.notes}} - by {{question.author}}
+  <li>{{#link-to 'question' question.id}}
+    {{question.body}} {{/link-to}}
+    <br> - by {{question.author}}
     {{update-question question=question update="update"}}
-    <button style="btn btn-default" {{action 'delete' question}}>Delete</button>
+    <button style="btn btn-primary" {{action 'delete' question}}>Delete</button>
   </li>
 <!-- {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}} -->
