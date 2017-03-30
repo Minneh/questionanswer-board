@@ -1,7 +1,11 @@
 <h1>Welcome to QnA</h1>
 
+<h2>Questions</h2>
+
 <ul>
   {{#each model as |question|}}
-  <li>{{question.body}} <br> {{question.notes}} - by {{question.author}}</li>
+    {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
+
+{{new-question saveQuestion2 = "saveQuestion3"}}
