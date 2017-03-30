@@ -1,0 +1,14 @@
+{"questions" : [{
+  "author": "Jamie Oliver",
+  "body": "What is a model?",
+  "notes": "Hi guys, I was wondering if someone could give me a rundown on what exactly models are and their functions. Thanks in advance!"
+},{
+  "author": "Peter Griffin",
+  "body": "What do routes do?",
+  "notes": "As above"
+},{
+"author": "Stan Marsh",
+"body": "How to handle child components.",
+"notes": "Lorem ipsum sit dolor amet."
+}]
+}

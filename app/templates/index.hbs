@@ -1,0 +1,7 @@
+<h1>Welcome to QnA</h1>
+
+<ul>
+  {{#each model as |question|}}
+  <li>{{question.body}} <br> {{question.notes}} - by {{question.author}}</li>
+  {{/each}}
+</ul>
