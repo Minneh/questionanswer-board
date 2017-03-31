@@ -2,6 +2,8 @@
 
 A question and answer message board where a user submits a question and other users can respond with answers
 
+## Created by: Minneh Mugo
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -14,7 +16,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/Minneh/questionanswer-board>` this repository
 * `cd qnaboard`
 * `npm install`
 * `bower install`
