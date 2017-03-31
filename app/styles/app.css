@@ -4,10 +4,6 @@
   top: 30%;
 }
 
-body{
-
-}
-
 qn{
   font-size: 16pt;
 }
@@ -15,6 +11,7 @@ qn{
 nts{
   font-size: 12pt;
 }
+
 h1, footer{
   text-align: center;
 }
