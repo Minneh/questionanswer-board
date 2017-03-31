@@ -1,6 +1,7 @@
 <h2>Question by {{model.author}}</h2>
 <hr>
 
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
+
 {{update-question question=model update="update"}}
+{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
 {{new-answer saveAnswer="saveAnswer" question=model}}
