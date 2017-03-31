@@ -22,6 +22,7 @@ module.exports = function(environment) {
       apiKey: 'AIzaSyD8wmRMIUuRtyHz-jkpfMJAAAMxwNDlg0k',
       authDomain: 'qnaboard-183fe.firebaseapp.com',
       databaseURL: 'https://qnaboard-183fe.firebaseio.com',
+      projectId: "qnaboard-183fe",
       storageBucket: 'qnaboard-183fe.appspot.com'
     },
     APP: {
