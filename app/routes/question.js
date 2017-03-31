@@ -25,15 +25,15 @@ export default Ember.Route.extend({
    },
     destroyQuestion(question){
       var answer_deletions = question.get('answers').map(function(answer){
-        return answer,destroyRecord();
+        return answer.destroyRecord();
       });
       Ember.RSVP.all(answer_deletions).then(function(){
-        return rental.destroyRecord();
+        return question.destroyRecord();
       });
       this.transitionTo('index');
     },
     destroyAnswer(answer){
-      review.destroyRecord();
+      answer.destroyRecord();
       this.transitionTo('index');
     }
   }

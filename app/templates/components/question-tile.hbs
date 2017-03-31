@@ -1,6 +1,4 @@
   <li style="font-size: 130%;">{{#link-to 'question' question.id}}
     {{question.body}} {{/link-to}}
     <br> - by {{question.author}}
-    {{update-question question=question update="update"}}
-    <button class="btn btn-default" {{action 'delete' question}}>Delete Question</button>
   </li>
