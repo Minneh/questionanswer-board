@@ -1,7 +1,6 @@
-# qnaboard
+# Project Name: Question and Answer Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A question and answer message board where a user submits a question and other users can respond with answers
 
 ## Prerequisites
 
