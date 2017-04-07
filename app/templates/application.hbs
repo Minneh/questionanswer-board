@@ -6,7 +6,14 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            {{#link-to 'index' class="active"}}Home{{/link-to}}
+            <li>
+              {{#link-to 'index' class="active"}}Home{{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'favorites' class="active"}}
+                Favorite Questions
+              {{/link-to}}
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
