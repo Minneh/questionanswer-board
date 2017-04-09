@@ -1,7 +1,14 @@
+{{!-- question template --}}
 <h2>Question by {{model.author}}</h2>
 <hr>
 
-
+{{!-- update question button --}}
 {{update-question question=model update="update"}}
+
+{{!-- question-detail: main question body, buttons and corresponding answers --}}
+{{!-- destroyQuestion="destroyQuestion" mapping the destroyQuestion() action coming up from the component (on the left of = ) to the destroyQuestion() action on the route handler. --}}
+{{!-- destroyAnswer="destroyAnswer" mapping the destroyAnswer() action coming up from the component (on the left of = ) to the destroyAnswer() action on the route handler. --}}
+{{!-- addToFavorites="addToFavorites" mapping the addToFavorites() action coming up from the component (on the left of = ) to the addToFavorites() action on the route handler. --}}
 {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer" addToFavorites="addToFavorites"}}
+{{!--  --}}
 {{new-answer saveAnswer="saveAnswer" question=model}}

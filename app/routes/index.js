@@ -17,10 +17,10 @@ export default Ember.Route.extend({
   actions:{
     // save question function to save questions to db
     saveQuestion3(params){
-      var newQuestion = this.store.createRecord('question', params);
-      newQuestion.save();
+      var newQuestion = this.store.createRecord('question', params); //use params to create new question record in the store
+      newQuestion.save(); //save new question
 
-      // move to index page
+      // move to index page and see our new question in the list
       this.transitionTo('index');
     }
   }

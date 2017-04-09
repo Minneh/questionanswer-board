@@ -1,9 +1,12 @@
+{{!-- set a property, addNewQuestion to true or false. When true, the form will show. When false, the button will show --}}
+
 {{#if addNewQuestion}}
 <h2>New Question</h2>
 <div>
   <form>
     <div class="form-group">
       <label for="author">Name</label>
+      {{!-- input helper for form inputs --}}
         {{input value=author id="author"}}
     </div>
     <div class="form-group">
@@ -14,6 +17,7 @@
       <label for="notes">Notes</label>
         {{input value=notes id="notes"}}
     </div>
+    {{!-- submit button has the saveQuestion1 action attached to begin the process of saving the new question added by a user. --}}
     <button class="btn btn-primary" {{action 'saveQuestion1'}}>Save Question</button>
   </form>
 </div>

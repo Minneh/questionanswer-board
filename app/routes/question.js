@@ -33,9 +33,11 @@ export default Ember.Route.extend({
    },
    // delete question function
     destroyQuestion(question){
+      //delete answers first, if any, to avoid orphan answers
       var answer_deletions = question.get('answers').map(function(answer){
         return answer.destroyRecord(); //delete answers from db
       });
+      //once all answers are deleted, delete question
       Ember.RSVP.all(answer_deletions).then(function(){
         return question.destroyRecord(); //delete question from db
       });
