@@ -1,3 +1,4 @@
+{{!-- list questions as link as well as author; included star to prevent blank questions (temporary fix) --}}
   <li style="font-size: 130%;">{{#link-to 'question' question.id}}
     {{question.body}} * {{/link-to}}
     <br> - by {{question.author}}

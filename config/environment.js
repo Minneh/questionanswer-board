@@ -17,7 +17,7 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+      // firebase config data
       firebase: {
       apiKey: 'AIzaSyD8wmRMIUuRtyHz-jkpfMJAAAMxwNDlg0k',
       authDomain: 'qnaboard-183fe.firebaseapp.com',

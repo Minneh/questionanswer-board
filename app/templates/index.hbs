@@ -1,12 +1,17 @@
 <h1>Welcome to QnA</h1>
 
 <h2>Questions</h2>
+{{!-- Add new question button --}}
 {{new-question saveQuestion2 = "saveQuestion3"}}
 <hr>
 
 <ul>
+  {{!-- Loop through and list questions --}}
   {{#each model.questions as |question|}}
+  {{!-- {{question-popularity question}} display star or not depending on number of answers; question-tile displays list of questions;--}}
      {{question-popularity question}}{{question-tile question=question}}
-     <hr>
-  {{/each}}
+     {{!-- question=question: we are passing the variable question to the component and assigning it the value of question, representing the individual question object in the current iteration of the loop. That is, we're defining the variable question used in the component's file as the model object we're also referring to as question during each iteration of the loop, as defined when we state {{#each model.questions as |question|. To put it briefly, the question on the left of the = refers to the variable name used within the component and the question on the right refers to the model object we're assigning this variable to.}}--}}
+     
+     <hr> {{!-- add formatting line --}}
+  {{/each}} {{!-- end of loop --}}
 </ul>

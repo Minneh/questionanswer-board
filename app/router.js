@@ -8,8 +8,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('question', {path:'/question/:question_id'});
-  this.route('favorites');
+  this.route('question', {path:'/question/:question_id'});//include question route with custom path
+  this.route('favorites');//include favorites route
 });
 
 export default Router; //make this Router constant available to other parts of the application
